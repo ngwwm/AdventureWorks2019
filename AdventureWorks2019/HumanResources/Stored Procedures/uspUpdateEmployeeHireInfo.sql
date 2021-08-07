@@ -33,6 +33,7 @@ BEGIN
     BEGIN CATCH
         -- Rollback any active or uncommittable transactions before
         -- inserting information in the ErrorLog
+        -- Comment
         IF @@TRANCOUNT > 0
         BEGIN
             ROLLBACK TRANSACTION;
