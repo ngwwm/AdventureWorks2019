@@ -10,7 +10,7 @@ WITH EXECUTE AS CALLER
 AS
 BEGIN
     SET NOCOUNT ON;
-
+    -- add comment for bugfix 20210807.1
     BEGIN TRY
         UPDATE [HumanResources].[Employee] 
         SET [OrganizationNode] = @OrganizationNode 
