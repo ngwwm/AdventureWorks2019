@@ -13,6 +13,7 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
+    /*
       DECLARE @string nvarchar(1050)
       --setting the lcid to the default instance LCID if needed
       IF @language = NULL OR @language = 0 
@@ -52,5 +53,5 @@ BEGIN
                         INNER JOIN CONTAINSTABLE([HumanResources].[JobCandidate],*,@string,LANGUAGE @language) AS KEY_TBL
                    ON  FT_TBL.[JobCandidateID] =KEY_TBL.[KEY]
             END
-
+*/
 END;
