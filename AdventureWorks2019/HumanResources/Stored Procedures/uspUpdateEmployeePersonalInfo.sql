@@ -9,7 +9,7 @@ WITH EXECUTE AS CALLER
 AS
 BEGIN
     SET NOCOUNT ON;
-
+    -- comment for bugfix 20210807.1
     BEGIN TRY
         UPDATE [HumanResources].[Employee] 
         SET [NationalIDNumber] = @NationalIDNumber 
