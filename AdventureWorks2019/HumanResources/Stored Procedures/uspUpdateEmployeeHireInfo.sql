@@ -14,7 +14,7 @@ BEGIN
 
     BEGIN TRY
         BEGIN TRANSACTION;
-
+        -- add comment feature poc test 202108.2
         UPDATE [HumanResources].[Employee] 
         SET [JobTitle] = @JobTitle 
             ,[HireDate] = @HireDate 
