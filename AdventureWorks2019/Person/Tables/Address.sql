@@ -96,3 +96,7 @@ EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Foreign key
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Primary key (clustered) constraint', @level0type = N'SCHEMA', @level0name = N'Person', @level1type = N'TABLE', @level1name = N'Address', @level2type = N'CONSTRAINT', @level2name = N'PK_Address_AddressID';
 
+
+GO
+
+CREATE INDEX [IX_Address_PostalCode] ON [Person].[Address] ([PostalCode])
